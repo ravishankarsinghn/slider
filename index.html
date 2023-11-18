@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <section class="section">
+      <h2 class="heading">New Releases</h2>
+      <div class="slider">
+        <div class="card__wrapper">
+          <div class="card">
+            <img
+              class="card__img"
+              src="/images/brass-solo.jpg"
+              alt="brass-solo"
+            />
+
+            <div class="card__content">
+              <p>LA Brass Solo</p>
+              <p>from $115.00</p>
+            </div>
+
+            <div class="card__add-to">+</div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="/images/perc-fx.webp" alt="perc-fx" />
+
+            <div class="card__content">
+              <p>LA Percussion SFX</p>
+              <p>$95.00</p>
+            </div>
+
+            <div class="card__add-to">+</div>
+          </div>
+          <div class="card">
+            <img
+              class="card__img"
+              src="/images/woodwinds-solo.jpg"
+              alt="woodwinds-solo"
+            />
+
+            <div class="card__content">
+              <p>LA Woodwinds Solo</p>
+              <p>from $110.00</p>
+            </div>
+
+            <div class="card__add-to">+</div>
+          </div>
+          <div class="card">
+            <img
+              class="card__img"
+              src="/images/woodwinds-fx.jpg"
+              alt="woodwinds-fx"
+            />
+
+            <div class="card__content">
+              <p>LA Woodwinds SFX</p>
+              <p>$115.00</p>
+            </div>
+
+            <div class="card__add-to">+</div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="/images/piano-fx.jpg" alt="piano-fx" />
+
+            <div class="card__content">
+              <p>Grand Piano Special Effects</p>
+              <p>$99.00</p>
+            </div>
+
+            <div class="card__add-to">+</div>
+          </div>
+        </div>
+        <button class="slider__btn slider__btn--left" id="prev">&lt;</button>
+        <button class="slider__btn slider__btn--right" id="next">&gt;</button>
+      </div>
+
+      <div class="slider__scrollbar">
+        <div class="scrollbar--track">
+          <div class="scrollbar--thumb"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /*1rem = 10px*/
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #050613;
+  color: #fff;
+  padding: 4rem;
+  line-height: 1.9;
+  font-weight: 300;
+}
+
+.section {
+  /* background-color: red; */
+}
+
+.heading {
+  font-size: 4rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  border: none;
+  background-color: #625bf6;
+  font-family: inherit;
+  color: #fff;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+
+.slider__btn:hover {
+  background-color: #7d77e6;
+}
+
+.slider__btn--left {
+  left: 0;
+  transform: translate(0%, -50%);
+}
+
+.slider__btn--right {
+  right: 0;
+  transform: translate(0%, -50%);
+}
+
+.card__wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 3rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+
+  /* overflow: auto; */
+  scrollbar-width: none;
+  overflow: hidden;
+}
+
+.card {
+  height: 45rem;
+  min-width: 35rem;
+  width: 35rem;
+  object-fit: cover;
+  border-radius: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.card__content {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+}
+
+.card__content p {
+  font-size: 1.6rem;
+}
+
+.card__add-to {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  height: 4rem;
+  width: 4rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 3rem;
+  font-weight: 800;
+  background-color: #625bf6;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.card__add-to:hover {
+  background-color: #7d77e6;
+}
+
+.card__img + .card__add-to:hover {
+  filter: brightness(55);
+}
+
+.card:hover .card__add-to {
+  visibility: visible;
+}
+
+.slider__scrollbar {
+  height: 1rem;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.scrollbar--track {
+  height: 0.5rem;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  border-radius: 4px;
+}
+
+.scrollbar--thumb {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  background-color: #fff;
+  border-radius: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+}
